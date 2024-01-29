@@ -10,8 +10,17 @@ The project's primary objective is to construct a model capable of accurately pr
 
 ### Documents
 
-Spam_Notebook: This Jupyter Notebook is an essential part of the project dedicated to analyzing website traffic and developing a model for forecasting the website unique visitor.
-Train Data: The training dataset was obtained from Kaggle, and the source link is provided above. This dataset serves as the foundation for analysis and model development.
+Spam_detection_notebook.ipynb: This Jupyter Notebook is an essential part of the project dedicated to analyzing mail text and building a model for 
+app.py: The app that is  deployed on streamlit.
+e-mail-3597088_1280.jpg: Image used on the app.
+functions.py: Python script containing functions for removing stopwords, punctuation and lemmatization.
+image_streamlit.png: : Image used on the app. 
+label_encoder.joblib: An encoder extracted from the notebook, used for interacting with the app.
+letter-7102986_1280.jpg: Image used on the app.
+lr_Model.joblib: A model extracted from the notebook used in the app.
+requirements.txt: text file with the modules that are needed to run the app.
+spam.csv: The data that is used for the project.
+tf_vector.joblib: Vectorizer extracted from the notebook, used for interacting with the app.
 
 ### Notebook Content
 
