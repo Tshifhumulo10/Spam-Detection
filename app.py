@@ -69,7 +69,7 @@ def page2():
         tf = joblib.load('tf_vector.joblib') #Loading the vectorizer
         X=tf.transform([lemma]).toarray()
         l_encoder = joblib.load('label_encoder.joblib') #Loading the encoder
-        lr_model = joblib.load('lr_model.joblib') #loading the model
+        lr_model = joblib.load('lr_Model.joblib') #loading the model
         y=lr_model.predict(X)
         y_original = l_encoder.inverse_transform(y)
         #st.write(y_original)
