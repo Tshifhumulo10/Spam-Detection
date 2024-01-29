@@ -14,8 +14,22 @@ import string
 import urllib
 import nltk
 
+)
 
-
+#Libraries for data engineering and modeling
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.tree import DecisionTreeClassifier,plot_tree
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.utils import resample
+from sklearn.svm import SVC
+from sklearn.feature_selection import VarianceThreshold
+from sklearn.svm import SVC
 
 
 def page1():
