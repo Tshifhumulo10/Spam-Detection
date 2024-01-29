@@ -3,6 +3,16 @@ import pandas as pd
 import numpy as np
 from functions import remove_stopwords, remove_punctuation, lemmatize_text
 import joblib
+import nltk
+from nltk import TreebankWordTokenizer, SnowballStemmer
+from sklearn.feature_extraction.text import CountVectorizer
+from nltk.stem import WordNetLemmatizer,PorterStemmer
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+import nltk
+import string
+import urllib
+import nltk
 
 
 
