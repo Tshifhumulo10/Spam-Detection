@@ -4,7 +4,10 @@ import numpy as np
 from functions import remove_stopwords, remove_punctuation, lemmatize_text
 import joblib
 import nltk
+nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
 from nltk import TreebankWordTokenizer, SnowballStemmer
 from sklearn.feature_extraction.text import CountVectorizer
 from nltk.stem import WordNetLemmatizer,PorterStemmer
