@@ -14,7 +14,6 @@ import string
 import urllib
 import nltk
 
-)
 
 #Libraries for data engineering and modeling
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
