@@ -4,14 +4,17 @@ Email is one of the quickest means of communication widely utilized by both comp
 
 The project's primary objective is to construct a model capable of accurately predicting whether an email is classified as spam or not. The dataset utilized for this project was obtained from the Kaggle platform. Moreover, the model has also been deployed using streamlit cloud. 
 
-Data Source
+### Data Source
+
 [website](https://www.kaggle.com/datasets/shantanudhakadd/email-spam-detection-dataset-classification)
 
-Documents
+### Documents
+
 Spam_Notebook: This Jupyter Notebook is an essential part of the project dedicated to analyzing website traffic and developing a model for forecasting the website unique visitor.
 Train Data: The training dataset was obtained from Kaggle, and the source link is provided above. This dataset serves as the foundation for analysis and model development.
 
-Notebook Content
+### Notebook Content
+
 Objectives
 Importing Libraries
 Data Collection
@@ -20,7 +23,9 @@ Exploratory data Analysis
 Feature Engineering
 modeling
 Model review
-Usage
+
+### Usage
+
 To make the most of this notebook and our analysis:
 
 Clone this repository to your local machine.
@@ -28,5 +33,5 @@ Ensure you have the required Python libraries and dependencies installed.
 Open the notebook in Jupyter Notebook or any compatible environment.
 Execute each cell in the notebook sequentially to reproduce the analysis and model development.
 
-Project Progress
+### Project Progress
 The analysis is ongoing, and the notebook is continuously updated with new findings and model improvements.
