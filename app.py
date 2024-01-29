@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+pip install matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
 from functions import remove_stopwords, remove_punctuation, lemmatize_text
