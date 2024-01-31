@@ -57,7 +57,7 @@ st.write("**Check if we got your mail right \u2193**")
 st.write(user_input)
 #st.pd.DataFrame('user_input', columns='Your email')
 st.write("**Press \u2193 to pedict**")
-button_clicked = st.button("Predict", key="predict_button", kwargs={"style": "background-color: red; color: white"})
+button_clicked = st.button("Predict", key="predict_button", kwargs={"style": "background-color: red; color: red"})
 
 if button_clicked:
     # Removing stop words
