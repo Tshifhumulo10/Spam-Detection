@@ -57,7 +57,8 @@ st.write("**Check if we got your mail right \u2193**")
 st.write(user_input)
 #st.pd.DataFrame('user_input', columns='Your email')
 st.write("**Press \u2193 to pedict**")
-if st.button("Predict"):
+button_clicked = st.button("Predict", key="predict_button", kwargs={"style": "background-color: red; color: white"})
+if st.button_clicked("Predict"):
     #Removing stop words
     rmv_stopwords=remove_stopwords(user_input)
     #Removing Punctuation
@@ -77,6 +78,10 @@ if st.button("Predict"):
     else:
         st.success("legitimate email.")
         
+
+
+        import streamlit as st
+
 st.subheader("Dont have a mail? Try this mails out.")
 st.write("Spam email example")
 st.write("Congratulations! You have been selected as a winner of our exclusive prize giveaway! You have a limited time to claim your prize, so act now. 🎉 Your Prize:   -$1,000 cash reward   -All-expenses-paid vacation  - Free latest gadgetsTo claim your prize, Act fast  before this exclusive offer expires! Don't miss out on this once-in-a-lifetime opportunity.")
