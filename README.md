@@ -13,21 +13,21 @@ The project's primary objective is to construct a model capable of accurately pr
 
 ### Documents
 
-Spam_detection_notebook.ipynb: This Jupyter Notebook is an essential part of the project dedicated to analyzing mail text and building a model for spam detection.
+**Spam_detection_notebook.ipynb:** This Jupyter Notebook is an essential part of the project dedicated to analyzing mail text and building a model for spam detection.
 
-app.py: The app that is  deployed on streamlit.
+**app.py:** The app that is  deployed on streamlit.
 
-functions.py: Python script containing functions for removing stopwords, punctuation and lemmatization.
+**functions.py:** Python script containing functions for removing stopwords, punctuation and lemmatization.
 
-label_encoder.joblib: An encoder extracted from the notebook, used for interacting with the app.
+**label_encoder.joblib:** An encoder extracted from the notebook, used for interacting with the app.
 
-lr_Model.joblib: A model extracted from the notebook used in the app.
+**lr_Model.joblib:** A model extracted from the notebook used in the app.
 
-requirements.txt: text file with all the dependencies needed to run the app.
+**requirements.txt:** text file with all the dependencies needed to run the app.
 
-spam.csv: The data that is used for the project.
+**spam.csv:** The data that is used for the project.
 
-tf_vector.joblib: Vectorizer extracted from the notebook, used for interacting with the app.
+**tf_vector.joblib:** Vectorizer extracted from the notebook, used for interacting with the app.
 
 ### Notebook Content
 
