@@ -1,8 +1,9 @@
-# Spam-Detection
+# **Spam-Detection**
+![e-mail-3597088_1280](https://github.com/Tshifhumulo10/Spam-Detection/assets/115041717/84e1628c-1d21-4498-bc5a-f09d1c8a6338)
 
 Email is one of the quickest means of communication widely utilized by both companies and individuals on a daily basis. Despite its convenience, there are drawbacks associated with using emails, with one of the major issues being 'SPAM.' Spam emails are unsolicited mails sent to a large number of users, serving various purposes such as advertising, phishing, spreading malware, and engaging in other malicious activities. The presence of spam can significantly impact user experience, leading to dissatisfaction. To enhance user experience and mitigate the negative effects of spam, companies that manage email services have implemented filters. These filters work to identify and segregate spam, ensuring that users do not interact with emails that may compromise their computers or expose them to scams. This proactive approach helps safeguard users from potential harm and maintains the integrity of the communication platform.
 
-![e-mail-3597088_1280](https://github.com/Tshifhumulo10/Spam-Detection/assets/115041717/84e1628c-1d21-4498-bc5a-f09d1c8a6338)
+![letter-7102986_1280](https://github.com/Tshifhumulo10/Spam-Detection/assets/115041717/7a1807b7-26c8-498e-947b-0701ecaaba73)
 
 The project's primary objective is to construct a model capable of accurately predicting whether an email is classified as spam or not. The dataset utilized for this project was obtained from the Kaggle platform. Moreover, the model has also been deployed using streamlit cloud. 
 
@@ -37,12 +38,19 @@ tf_vector.joblib: Vectorizer extracted from the notebook, used for interacting w
 ### Notebook Content
 
 Objectives
+
 Importing Libraries
+
 Data Collection
+
 Preprocessing
+
 Exploratory data Analysis
+
 Feature Engineering
+
 modeling
+
 Model review
 
 ### Usage
