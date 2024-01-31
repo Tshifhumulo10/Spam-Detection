@@ -17,19 +17,13 @@ Spam_detection_notebook.ipynb: This Jupyter Notebook is an essential part of the
 
 app.py: The app that is  deployed on streamlit.
 
-e-mail-3597088_1280.jpg: Image used on the app.
-
 functions.py: Python script containing functions for removing stopwords, punctuation and lemmatization.
-
-image_streamlit.png: : Image used on the app. 
 
 label_encoder.joblib: An encoder extracted from the notebook, used for interacting with the app.
 
-letter-7102986_1280.jpg: Image used on the app.
-
 lr_Model.joblib: A model extracted from the notebook used in the app.
 
-requirements.txt: text file with the modules that are needed to run the app.
+requirements.txt: text file with all the dependencies needed to run the app.
 
 spam.csv: The data that is used for the project.
 
