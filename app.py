@@ -1,3 +1,4 @@
+#importing Libraries 
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -15,47 +16,14 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import string
 import urllib
-
-
-
-#Libraries for data engineering and modeling
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.tree import DecisionTreeClassifier,plot_tree
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, classification_report, confusion_matrix
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.utils import resample
-from sklearn.svm import SVC
-from sklearn.feature_selection import VarianceThreshold
-from sklearn.svm import SVC
 
 
-#def page2():
-    # #st.title("Spam Detection")
-   
-    
-    # st.title("Spam Dectection Project Overview")
-    
-    
-    # st.image("e-mail-3597088_1280.jpg")
-
-    # st.write("Email is one of the quickest means of communication widely utilized by both companies and individuals on a daily basis. Despite its convenience, there are drawbacks associated with using emails, with one of the major issues being 'SPAM.' Spam emails are unsolicited mails sent to a large number of users, serving various purposes such as advertising, phishing, spreading malware, and engaging in other malicious activities. The presence of spam can significantly impact user experience, leading to dissatisfaction. To enhance user experience and mitigate the negative effects of spam, companies that manage email services have implemented filters. These filters work to identify and segregate spam, ensuring that users do not interact with emails that may compromise their computers or expose them to scams. This proactive approach helps safeguard users from potential harm and maintains the integrity of the communication platform.")
-    # st.image("letter-7102986_1280.jpg")
-    # st.write("The project's primary objective is to construct a model capable of accurately predicting whether an email is classified as spam or not. The dataset utilized for this project was obtained from the Kaggle platform. The user interface includes a textbox where users can input their email, click the predict button and the model will subsequently provide a prediction indicating whether the email is categorized as spam or not.")
-    # st.write("Enjoy the app! 😊") #if you want to add some colour
 
 st.title("Spam Detection Application")
-    
-#user_input = st.text_input(label='', value='Hi, welcome to my app')
 user_input = st.text_area("**Enter your email \u2193 :**", height=5)
-#st.write("")
-#st.write("**Check if we got your mail right \u2193**")
-#st.write(user_input)
-#st.pd.DataFrame('user_input', columns='Your email')
 st.write("**Press \u2193 to pedict**")
 button_clicked = st.button("Predict", key="predict_button", kwargs={"style": "background-color: red; color: red"})
 
@@ -86,16 +54,4 @@ st.write("Congratulations! You have been selected as a winner of our exclusive p
 st.write("Normal email example")
 st.write("I hope this email finds you well. Just a quick reminder that we have a team meeting scheduled for tomorrow at 10 AM in the conference room. We'll be discussing the upcoming project and addressing any questions or concerns. Looking forward to your participation.")
         
-    # st.header('Wordcloud of  top twenty prevalent **words** on spam mail **training data**')
-    # st.image("image_streamlit.png")
-        
-
-#selected_page = st.sidebar.radio("Select a page", ["Project Overview", "Application"])
-
-# Display the selected page
-#if selected_page == "Project Overview":
-    #page1()
-
-#elif selected_page == "Application":
-    #page2()
     
