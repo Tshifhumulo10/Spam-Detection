@@ -51,7 +51,7 @@ from sklearn.svm import SVC
 st.title("Spam Detection Application")
     
 #user_input = st.text_input(label='', value='Hi, welcome to my app')
-user_input = st.text_area("**Enter your mail \u2193 :**", height=5)
+user_input = st.text_area("**Enter your email \u2193 :**", height=5)
 #st.write("")
 #st.write("**Check if we got your mail right \u2193**")
 #st.write(user_input)
@@ -80,7 +80,7 @@ if button_clicked:
     else:
         st.success("Legitimate email.")
 
-st.subheader("Dont have a mail? Try this mails out.")
+st.subheader("Dont have an email? Try this emails samples out.")
 st.write("Spam email example")
 st.write("Congratulations! You have been selected as a winner of our exclusive prize giveaway! You have a limited time to claim your prize, so act now. 🎉 Your Prize:   -$1,000 cash reward   -All-expenses-paid vacation  - Free latest gadgetsTo claim your prize, Act fast  before this exclusive offer expires! Don't miss out on this once-in-a-lifetime opportunity.")
 st.write("Normal email example")
