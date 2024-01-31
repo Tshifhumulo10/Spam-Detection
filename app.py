@@ -58,29 +58,27 @@ st.write(user_input)
 #st.pd.DataFrame('user_input', columns='Your email')
 st.write("**Press \u2193 to pedict**")
 button_clicked = st.button("Predict", key="predict_button", kwargs={"style": "background-color: red; color: white"})
-if st.button_clicked("Predict"):
-    #Removing stop words
-    rmv_stopwords=remove_stopwords(user_input)
-    #Removing Punctuation
-    rmv_punct=remove_punctuation(rmv_stopwords)
-    #lemmatization
-    lemma=lemmatize_text(rmv_punct)
-    #st.write(lemma)
-    tf = joblib.load('tf_vector.joblib') #Loading the vectorizer
-    X=tf.transform([lemma]).toarray()
-    l_encoder = joblib.load('label_encoder.joblib') #Loading the encoder
-    lr_model = joblib.load('lr_Model.joblib') #loading the model
-    y=lr_model.predict(X)
+
+if button_clicked:
+    # Removing stop words
+    rmv_stopwords = remove_stopwords(user_input)
+    # Removing Punctuation
+    rmv_punct = remove_punctuation(rmv_stopwords)
+    # Lemmatization
+    lemma = lemmatize_text(rmv_punct)
+    
+    # Your further processing code...
+    tf = joblib.load('tf_vector.joblib')  # Loading the vectorizer
+    X = tf.transform([lemma]).toarray()
+    l_encoder = joblib.load('label_encoder.joblib')  # Loading the encoder
+    lr_model = joblib.load('lr_Model.joblib')  # loading the model
+    y = lr_model.predict(X)
     y_original = l_encoder.inverse_transform(y)
-    #st.write(y_original)
+
     if y_original == 'spam':
         st.error("Spam email.")
     else:
-        st.success("legitimate email.")
-        
-
-
-        import streamlit as st
+        st.success("Legitimate email.")
 
 st.subheader("Dont have a mail? Try this mails out.")
 st.write("Spam email example")
