@@ -7,6 +7,9 @@ Email is one of the quickest means of communication widely utilized by both comp
 
 The project's primary objective is to construct a model capable of accurately predicting whether an email is classified as spam or not. The dataset utilized for this project was obtained from the Kaggle platform. Moreover, the model has also been deployed using streamlit cloud. 
 
+### App Link
+[App lik](https://spam-detection-mszgsckgdupbk48tw4sfri.streamlit.app/)
+
 ### Data Source
 
 [website](https://www.kaggle.com/datasets/shantanudhakadd/email-spam-detection-dataset-classification)
