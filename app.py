@@ -23,7 +23,7 @@ from sklearn.linear_model import LogisticRegression
 
 
 st.title("Spam Detection Application")
-user_input = st.text_area("**Enter your email \u2193 :**", height=5)
+user_input = st.text_area("**Enter your email message \u2193 :**", height=5)
 st.write("**Press \u2193 to pedict**")
 button_clicked = st.button("Predict", key="predict_button", kwargs={"style": "background-color: red; color: red"})
 
