@@ -1,2 +1,2 @@
-nltk==nltk==3.6.2
+nltk==3.6.2
 scikit-learn==0.24.2
